@@ -19,7 +19,7 @@ class PrimeCli
 
       # Mandatory argument.
       opts.on("-m", "--max MAX_NUMBER", Integer,
-              "Require the MAX_NUMBER before executing your script") do |max|
+              "The largest prime that the program will search for to print out the multipcation table") do |max|
         options.max = max 
       end
 
