@@ -8,6 +8,7 @@ class Primer
     @num_len= [Math.log(@max_num * @max_num, 10), 1].max
   end
 
+  #Note: We could just use a gem to do this, but where's the fun in that?
   # Prints a multiplication table of all primes up to the max number specified
   # @param [String] separator - separates printed columns
   def print_multi_table(separator = ' ')
