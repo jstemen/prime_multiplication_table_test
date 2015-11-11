@@ -4,10 +4,7 @@ require 'optparse/time'
 require 'ostruct'
 require_relative './primer'
 
-class OptparseExample
-
-  CODES = %w[iso-2022-jp shift_jis euc-jp utf8 binary]
-  CODE_ALIASES = { "jis" => "iso-2022-jp", "sjis" => "shift_jis" }
+class PrimeCli
 
   #
   # Return a structure describing the options.
@@ -44,8 +41,8 @@ class OptparseExample
     options
   end  # parse()
 
-end  # class OptparseExample
+end  # class PrimeCli
 
-options = OptparseExample.parse(ARGV)
+options = PrimeCli.parse(ARGV)
 primer = Primer.new(options.max)
 primer.print_multi_table
