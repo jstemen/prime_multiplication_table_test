@@ -21,14 +21,15 @@ RSpec.describe Primer do
     it "should not return the number one" do
       expect(@primes).to_not include(1)
     end
-  enl
-  context "#print_multi_table" do
-    before(:all) do
-      @primer = Primer.new 10
+    enl
+    context "#print_multi_table" do
+      before(:all) do
+        @primer = Primer.new 10
+      end
+      it "should not crash" do
+        @primer.print_multi_table
+      end
     end
-    it "should not crash" do
-      @primer.print_multi_table
-    end
-  end
 
+  end
 end
