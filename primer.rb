@@ -1,7 +1,7 @@
 class Primer
   def initialize(limit)
     @max_num = limit
-    @num_len= Math.log @max_num * @max_num, 10
+    @num_len= [Math.log(@max_num * @max_num, 10), 1].max
   end
 
   def print_multi_table(separator = ' ')
